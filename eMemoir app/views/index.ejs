@@ -1,0 +1,37 @@
+<%-  include("./partials/header") %> 
+
+<%- include("./partials/navbar") %> 
+
+<div class="container mt-3 py-3">
+    <h3>All Memoirs 😄 </h3>
+
+    <% memos.reverse() %>
+
+
+    <% memos.forEach( memo =>{ %>
+        <div class="card mt-3" >
+            <!-- <img src="..." class="card-img-top" alt="..."> -->
+            <div class="card-body">
+              <p class="card-muted">Published at: <%= memo.postedAt%></p>
+              <h5 class="card-title"><%= memo.title%></h5>
+              <p class="card-text"><%= memo.content.slice(0,99) %>...<a href="/memo/<%= memo._id%>">Read more</a></p>
+             
+              <a href="/memo/<%= memo._id%>" class="btn btn-primary">Read more...</a>
+
+              <a href="/edit/<%= memo._id%>" class="btn btn-warning">Edit</a>
+
+              <a href="/delete/<%= memo._id%>" class="btn btn-danger">Delete</a>
+
+              
+
+
+            </div>
+          </div>
+
+   <% }); %>
+
+   
+</div>
+
+
+<%- include("./partials/footer") %> 
