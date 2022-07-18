@@ -26,8 +26,6 @@ app.use(express.static("public"))
 app.set("view engine", "ejs")
 
 
-
-
 app.use(require("./routes/index"))
 app.use(require("./routes/compose"))
 app.use(require("./routes/memo"))
