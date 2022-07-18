@@ -26,17 +26,11 @@ app.use(express.static("public"))
 app.set("view engine", "ejs")
 
 
-//routes
-app.use("/api",require("./routes/index"))
-
-app.use("/api",require("./routes/compose"))
-
-app.use("/api",require("./routes/memo"))
 
 
-// app.use(require("./routes/index"))
-// app.use(require("./routes/compose"))
-// app.use(require("./routes/memo"))
+app.use(require("./routes/index"))
+app.use(require("./routes/compose"))
+app.use(require("./routes/memo"))
 
 //server configurations
 

@@ -14,13 +14,13 @@
             <div class="card-body">
               <p class="card-muted">Published at: <%= memo.postedAt%></p>
               <h5 class="card-title"><%= memo.title%></h5>
-              <p class="card-text"><%= memo.content.slice(0,99) %>...<a href="api/memo/<%= memo._id%>">Read more</a></p>
+              <p class="card-text"><%= memo.content.slice(0,99) %>...<a href="memo/<%= memo._id%>">Read more</a></p>
              
-              <a href="/api/memo/<%= memo._id%>" class="btn btn-primary">Read more...</a>
+              <a href="memo/<%= memo._id%>" class="btn btn-primary">Read more...</a>
 
-              <a href="/api/edit/<%= memo._id%>" class="btn btn-warning">Edit</a>
+              <a href="edit/<%= memo._id%>" class="btn btn-warning">Edit</a>
 
-              <a href="/api/delete/<%= memo._id%>" class="btn btn-danger">Delete</a>
+              <a href="delete/<%= memo._id%>" class="btn btn-danger">Delete</a>
 
               
 

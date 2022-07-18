@@ -1,1 +1,0 @@
-app.listen(3000||process.env.PORT,()=> console.log("server started at port 3000 "))
