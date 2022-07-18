@@ -34,4 +34,4 @@ app.use(require("./routes/memo"))
 
 //server configurations
 
-app.listen(3000,()=> console.log("server started at port 3000 "))
+app.listen(3000||process.env.PORT,()=> console.log("server started at port 3000 "))
